@@ -1,0 +1,48 @@
+.gt-font-plusjakartasans { font-family: 'Logo Jakarta', sans-serif; }
+@font-face { font-family: 'Logo Jakarta'; src: url('/fonts/plusjakartasans-logo.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+.gt-brand {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: baseline;
+  flex-shrink: 0;
+  column-gap: .065em;
+  padding-block: 20px;
+  font-family: Switzer, sans-serif;
+  font-size: 24.96px;
+}
+.gt-name {
+  grid-column: 1;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.02em;
+  font-kerning: normal;
+  white-space: nowrap;
+}
+.gt-stop {
+  grid-column: 2;
+  width: .16em;
+  height: .16em;
+  align-self: end;
+  margin-bottom: .155em;
+  border-radius: 50%;
+  background: var(--orange);
+}
+.gt-descriptor {
+  grid-column: 1;
+  justify-self: end;
+  margin-top: 1px;
+  padding-right: .035em;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .gt-brand { font-size: clamp(16px, 5.216vw, 20.48px); padding-block: 18px; }
+  .gt-descriptor { font-size: 6.4px; }
+}
+
+
+
