@@ -4,7 +4,7 @@ import '../styles/experience-about.css';
 
 export function ExperienceAbout() {
   return <><CaseStudies />
-    <section className="ea-testimonials" aria-labelledby="testimonials-title">
+    <section hidden className="ea-testimonials" aria-labelledby="testimonials-title">
       <div className="wrap ea-testimonials-inner">
         <h2 id="testimonials-title">In their words.</h2>
         <div className="ea-testimonial-placeholder"><p>Testimonial to follow.</p><span>Design placeholder. Quote and attribution to be supplied.</span></div>
