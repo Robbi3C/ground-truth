@@ -24,7 +24,7 @@
 .m2-credentials p:first-child { padding-left: 0; border: 0; }
 .m2-credentials strong { font-size: 16px; font-weight: 500; display: block; }
 .m2-credentials span { font-size: 11px; line-height: 1.6; color: #4b4b45; display: block; margin-top: 5px; }
-.m2-space { padding-block: 76px; }
+.m2-space { padding-block: var(--section-space); }
 .m2 h2 { font-size: clamp(36px,4vw,57px); line-height: 1.08; letter-spacing: -.035em; font-weight: 600; text-transform: uppercase; }
 .m2-section-heading { display: grid; grid-template-columns: 1.2fr 1fr; gap: 70px; align-items: end; margin-bottom: 40px; }
 .m2-section-heading > p { font-size: 16px; line-height: 1.65; color: var(--muted); max-width: 44ch; }
@@ -82,8 +82,8 @@
 }
 .m2-contact-bottom p { font-size: 12px; line-height: 1.6; margin-top: 7px; }
 .m2-contact-pending { font-size: 10px; margin-top: 22px; }
-.m2-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 11px; padding-block: 28px; }
-.m2-footer a { display: flex; gap: 10px; align-items: center; min-height: 44px; }
+.m2-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 11px; padding-block: 32px; }
+.m2-footer > a { display: flex; gap: 10px; align-items: center; min-height: 44px; }
 @media(max-width:1100px) {
   .m2-hero { gap: 40px; }
   .m2 h1 { font-size: 7.4vw; }
@@ -111,7 +111,7 @@
   .m2-credentials p { padding: 16px 0 0; border: 0; border-top: 1px solid var(--line-dark); }
   .m2-credentials p:first-child { padding: 0; }
   .m2-credentials strong { font-size: 15px; }
-  .m2-space { padding-block: 50px; }
+
   .m2 h2 { font-size: clamp(29px,8vw,45px); }
   .m2-section-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 30px; }
   .m2-section-heading > p { font-size: 15px; }
@@ -136,9 +136,10 @@
   .m2-engagement-line svg { display: none; }
   .m2-contact-bottom { flex-direction: column; gap: 20px; }
   .m2-footer { flex-wrap: wrap; gap: 5px 20px; }
-  .m2-footer > span { flex-basis: 100%; }
+  .m2-footer-brand { flex-wrap: wrap; gap: 8px 16px; }
 }
 @media(prefers-reduced-motion:reduce) { .m2-button svg { transition: none; } }
 
-
-
+.m2-footer-brand { display: flex; align-items: center; gap: 24px; }
+.m2-footer-brand .gt-brand { padding-block: 0; }
+.m2-footer-brand .gt-brand:hover { text-decoration: none; }

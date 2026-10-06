@@ -32,8 +32,8 @@
 .sx-matrix-grid article:first-child .sx-body { color: var(--ink); }
 .sx-matrix-grid article:nth-child(5) { background: var(--charcoal); color: var(--paper); }
 .sx-matrix-grid article:nth-child(5) .sx-body { color: var(--muted); }
-.sx-focus-surface { background: var(--charcoal); padding-block: 58px 76px; }
-.sx-focus-surface h2 { margin-bottom: 38px; }
+.sx-focus-surface { background: var(--charcoal); padding-block: var(--section-space); }
+.sx-focus-surface h2 { margin-bottom: var(--section-heading-gap); }
 .sx-focus-layout { display: grid; grid-template-columns: 1fr 1.15fr; gap: 0; }
 .sx-service-menu { display: flex; flex-direction: column; padding-right: 42px; }
 .sx-service-menu button { display: flex; justify-content: space-between; align-items: center; text-align: left; gap: 20px; width: 100%; flex: 1; min-height: 70px; padding: 20px 16px; font: inherit; font-size: 20px; letter-spacing: -.02em; line-height: 1.25; border: 0; border-top: 1px solid var(--line-light); background: transparent; color: var(--paper); cursor: pointer; transition: background .2s,color .2s; }
@@ -68,7 +68,7 @@
   .sx-editorial-heading .sx-contact { margin-top: 18px; }
   .sx-editorial-list article { padding-block: 24px 28px; gap: 12px; }
   .sx-editorial-list h3 { font-size: 26px; }
-  .sx-matrix-surface, .sx-focus-surface { padding-block: 36px 44px; }
+  .sx-matrix-surface { padding-block: 36px 44px; }
   .sx-matrix-heading { display: block; margin-bottom: 28px; }
   .sx-matrix-heading .sx-contact { margin-top: 20px; }
   .sx-matrix-grid { grid-template-columns: 1fr; }
@@ -76,7 +76,7 @@
   .sx-matrix-grid h3 { min-height: 0; font-size: 26px; }
   .sx-matrix-grid .sx-lead { margin-top: 24px; }
   .sx-focus-layout { grid-template-columns: 1fr; }
-  .sx-focus-surface h2 { margin-bottom: 28px; }
+  .sx-focus-surface h2 { margin-bottom: var(--section-heading-gap); }
   .sx-service-menu { padding-right: 0; display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 20px; gap: 1px; }
   .sx-service-menu button { min-height: 82px; padding: 12px; font-size: 14px; border: 1px solid var(--line-light); }
   .sx-service-menu button svg { display: none; }

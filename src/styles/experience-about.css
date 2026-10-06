@@ -4,7 +4,7 @@
 .ea-review button { min-height: 44px; border: 1px solid transparent; padding: 10px 16px; background: transparent; color: inherit; cursor: pointer; font-size: 12px; }
 .ea-review button:hover { border-color: var(--muted); }
 .ea-review button[aria-pressed=true] { color: var(--ink); background: var(--paper); }
-.ea-section { padding-block: 80px; }
+.ea-section { padding-block: var(--section-space); }
 .ea-work { background: var(--paper); color: var(--ink); }
 .ea-heading { display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; align-items: end; margin-bottom: 52px; }
 .ea-heading > p { max-width: 36ch; font-size: 18px; line-height: 1.55; }
@@ -60,7 +60,7 @@
   .ea-person-layout { gap: 30px; }
 }
 @media(max-width:650px) {
-  .ea-section { padding-block: 48px; }
+
   .ea-review { align-items: flex-start; flex-direction: column; gap: 10px; }
   .ea-review button { padding-inline: 12px; }
   .ea-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 32px; }
@@ -81,4 +81,3 @@
   .ea-about .ea-person-heading h2 { font-size: clamp(25px,7.1vw,40px); }
 }
 @media(prefers-reduced-motion:reduce) { .ea-cta svg { transition: none; } }
-

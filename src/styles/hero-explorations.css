@@ -12,7 +12,7 @@
 .hx-cycle button:hover { background: #282826; }
 .hx-cycle > span { font-size: 10px; color: var(--muted); white-space: nowrap; }
 .hx-rationale { color: var(--muted); font-size: 11px; line-height: 1.5; padding-top: 10px; min-height: 27px; }
-.hx-stage { display: grid; grid-template-columns: 1.12fr 1fr; gap: 70px; align-items: center; padding-block: 18px 42px; min-height: 650px; }
+.hx-stage { display: grid; grid-template-columns: 1.12fr 1fr; gap: 70px; align-items: center; padding-block: var(--hero-top-space) var(--section-space); min-height: 650px; }
 .m2 .hx-stage h1 { font-size: clamp(54px,6.8vw,96px); }
 .hx-message { animation: hx-settle .25s var(--ease-out); min-width: 0; }
 .hx-lead { font-size: clamp(20px,1.65vw,24px); letter-spacing: -.02em; line-height: 1.35; margin-top: 26px; }
@@ -68,7 +68,7 @@
   .hx-cycle { width: 100%; justify-content: space-between; border-top: 1px solid var(--line-light); padding-top: 4px; }
   .hx-cycle button { height: 32px; width: 44px; }
   .hx-rationale { min-height: 45px; font-size: 10px; }
-  .hx-stage { grid-template-columns: 1fr; gap: 28px; min-height: 0; padding-block: 16px 30px; }
+  .hx-stage { grid-template-columns: 1fr; gap: 40px; min-height: 0; padding-block: var(--hero-top-space) var(--section-space); }
   .m2 .hx-stage h1 { font-size: clamp(46px,11.8vw,80px); }
   .m2 .hx-operator h1 { font-size: clamp(43px,10.5vw,73px); }
   .m2 .hx-priority h1 { font-size: clamp(41px,10.4vw,73px); }

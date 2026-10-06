@@ -24,3 +24,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Page rhythm: larger gaps separate sections; component spacing stays compact.
+   Based on Carbon's spacing scale and breakpoint guidance. */
+:root {
+  --section-space: 64px;
+  --section-heading-gap: 32px;
+  --ribbon-space: 32px;
+  --hero-top-space: 32px;
+}
+@media (min-width: 761px) {
+  :root {
+    --section-space: 80px;
+    --section-heading-gap: 40px;
+    --ribbon-space: 40px;
+    --hero-top-space: 40px;
+  }
+}
+@media (min-width: 1101px) {
+  :root {
+    --section-space: 96px;
+    --section-heading-gap: 48px;
+    --ribbon-space: 48px;
+    --hero-top-space: 48px;
+  }
+}

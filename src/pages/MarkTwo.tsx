@@ -12,7 +12,7 @@ function Conversation() {
 
 export function MarkTwo() {
   useEffect(() => { document.title = 'Ground Truth | Independent Advisory'; }, []);
-  return <div className="m2" id="top"><a className="skip-link" href="#main">Skip to content</a><header className="m2-header wrap"><GroundTruthBrand /><nav aria-label="Page navigation"><a href="#help">Where I help</a><a href="#work">Experience</a><a href="#about">About</a><a href="#contact">Let’s talk <ArrowDownRight size={16} aria-hidden="true" /></a></nav></header><main id="main"><HeroExplorations /><ServiceExplorations /><ExperienceAbout /><Conversation /></main><footer className="m2-footer wrap"><span>Ground Truth</span><a href="#top">Back to top <ArrowUp size={16} aria-hidden="true" /></a></footer></div>;
+  return <div className="m2" id="top"><a className="skip-link" href="#main">Skip to content</a><header className="m2-header wrap"><GroundTruthBrand /><nav aria-label="Page navigation"><a href="#help">Where I help</a><a href="#work">Experience</a><a href="#about">About</a><a href="#contact">Let’s talk <ArrowDownRight size={16} aria-hidden="true" /></a></nav></header><main id="main"><HeroExplorations /><ServiceExplorations /><ExperienceAbout /><Conversation /></main><footer className="m2-footer wrap"><div className="m2-footer-brand"><GroundTruthBrand /><span>© 2025</span></div><a href="#top">Back to top <ArrowUp size={16} aria-hidden="true" /></a></footer></div>;
 }
 
 
