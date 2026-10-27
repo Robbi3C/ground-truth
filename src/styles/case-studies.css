@@ -100,7 +100,7 @@
 @media(max-width:760px) { .cw-heading > .cw-all { margin-top: 24px; } .work-contact { align-items: start; flex-direction: column; } }
 @media(prefers-reduced-motion:reduce) { .cw-all svg { transition: none; } .cw-all:hover svg { transform: none; } }
 
-/* Pure Electric case study. One 12-column grid; every section shares two lines:
+/* Case study pages. One 12-column grid; every section shares two lines:
    the page edge (headings) and column 6 (copy, image, links). */
 .px-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; }
 .px-grid > :first-child { grid-column: 1 / 6; }
@@ -124,6 +124,8 @@
 
 .px-changes { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 32px; margin-top: 48px; padding: 0; list-style: none; }
 .px-changes li { border-top: 2px solid var(--orange); padding-top: 20px; }
+.px-changes.px-stack { grid-template-columns: 1fr; }
+.px-photo img { object-fit: cover; mix-blend-mode: normal; padding: 0; }
 .px-changes h3 { font-size: 21px; font-weight: 500; letter-spacing: -.02em; line-height: 1.25; color: var(--paper); }
 .px-copy .px-changes p { margin-top: 12px; font-size: 18px; line-height: 1.6; color: var(--paper); }
 
@@ -132,6 +134,7 @@
 .px-results .px-copy p { color: #4b4b45; }
 .px-results .px-copy .px-lead { color: var(--ink); }
 .px-outcomes { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 32px; margin: 44px 0; }
+.px-outcomes:first-child { margin-top: 0; }
 .px-outcomes > div { border-top: 1px solid var(--line-dark); padding-top: 18px; }
 .px-outcomes dt { font-size: clamp(44px, 4.6vw, 68px); font-weight: 600; line-height: 1; letter-spacing: -.045em; }
 .px-outcomes dd { margin: 12px 0 0; max-width: 28ch; font-size: 15px; line-height: 1.5; color: #4b4b45; }

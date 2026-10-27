@@ -1,3 +1,4 @@
 {
+  "redirects": [{ "source": "/work/pure-electric", "destination": "/work/micromobility-brand", "permanent": true }],
   "rewrites": [{ "source": "/work/:path*", "destination": "/index.html" }]
 }
