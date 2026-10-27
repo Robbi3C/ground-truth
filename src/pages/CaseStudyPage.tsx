@@ -20,11 +20,21 @@ export function CaseStudyPage({ slug }: { slug: string }) {
   const story = context[i];
   const isPure = slug === 'pure-electric';
 
+  if (isPure) return <div className="m2" id="top"><a className="skip-link" href="#main">Skip to content</a>
+    <header className="m2-header wrap"><GroundTruthBrand href="/"/><a className="cd-back" href={back}><ArrowLeft size={18} aria-hidden="true"/> All case studies</a></header>
+    <main id="main" className="px-page">
+      <PureElectricStory image={item.image} alt={item.alt}/>
+      <div className="wrap px-footer">
+        <nav className="cd-other px-grid" aria-label="Other case studies">{cases.filter(c=>c.slug!==slug).map(c=><a key={c.slug} href={`/work/${c.slug}`}><span>{c.name}</span><ArrowUpRight size={20} aria-hidden="true"/></a>)}</nav>
+        <a className="cd-back" href={back}><ArrowLeft size={18} aria-hidden="true"/> Back to all case studies</a>
+      </div>
+    </main></div>;
+
   return <div className="m2" id="top"><header className="m2-header wrap"><GroundTruthBrand href="/"/><a className="cd-back" href={back}><ArrowLeft size={18}/> All case studies</a></header>
     <main className="wrap cd-page">
-      {!isPure && <div className="cd-draft">Case study draft · Narrative based on the existing career summary. Detailed actions, dates and results still to confirm.</div>}
+      <div className="cd-draft">Case study draft · Narrative based on the existing career summary. Detailed actions, dates and results still to confirm.</div>
       <header className="cd-heading"><h1>{item.name}</h1><p>{item.title}</p><div className="cd-meta"><span>{item.sector}</span><span>{item.role}</span><span>Executive experience, before Ground Truth</span></div></header>
-      <div className="cd-layout"><article className="cd-story">{isPure ? <PureElectricStory/> : <><section><h2>The situation</h2><p>{story.situation}</p></section><section><h2>My role</h2><p>{story.remit}</p></section><section><h2>The work behind the result</h2><p>{story.focus}</p></section><section className="cd-input"><h2>To complete this story</h2><p>{story.questions}</p></section></>}</article><aside className="cd-aside"><div className={`cs-image cs-image-${i}`}><img src={item.image} alt={item.alt}/></div><p className="cd-result">{item.result}</p><p>{isPure ? 'Strategy, restructuring and distribution. Led as COO of Pure Electric, before Ground Truth.' : 'Result from the current career summary. Scope and measurement to be confirmed.'}</p></aside></div>
+      <div className="cd-layout"><article className="cd-story"><><section><h2>The situation</h2><p>{story.situation}</p></section><section><h2>My role</h2><p>{story.remit}</p></section><section><h2>The work behind the result</h2><p>{story.focus}</p></section><section className="cd-input"><h2>To complete this story</h2><p>{story.questions}</p></section></></article><aside className="cd-aside"><div className={`cs-image cs-image-${i}`}><img src={item.image} alt={item.alt}/></div><p className="cd-result">{item.result}</p><p>Result from the current career summary. Scope and measurement to be confirmed.</p></aside></div>
       <nav className="cd-other" aria-label="Other case studies">{cases.filter(c=>c.slug!==slug).map(c=><a key={c.slug} href={`/work/${c.slug}`}><span>{c.name}</span><ArrowUpRight size={20}/></a>)}</nav>
       <a className="cd-back" href={back}><ArrowLeft size={18}/> Back to all case studies</a>
     </main></div>;

@@ -34,7 +34,7 @@ The homepage includes the hero, proof ribbon, focused services selector, three c
 
 ## Publication notes
 
-The preview retains `noindex, nofollow`. Confirm career figures and case outcomes, replace the testimonial placeholder with an approved quote, and review the case-study reference images before public launch. The email link currently uses `rob@groundtruthconsuting.co` as originally supplied; confirm this spelling before launch.
+The preview retains `noindex, nofollow`. Confirm career figures and case outcomes, replace the testimonial placeholder with an approved quote, and review the case-study reference images before public launch.
 
 Fonts are local. Plus Jakarta Sans licensing is included under `public/fonts/`. Switzer was sourced from Fontshare: https://www.fontshare.com/licenses.
 
