@@ -1,4 +1,4 @@
-.proof-ribbon { background: #151515; border-block: 1px solid var(--line-light); }
+.proof-ribbon { background: var(--charcoal); border-block: 1px solid var(--line-light); }
 .proof-ribbon > .wrap { padding-block: var(--ribbon-space); }
 .proof-numbers { margin: 0; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 0; }
 .proof-numbers > div { display: flex; flex-direction: column-reverse; align-items: center; justify-content: flex-end; gap: 12px; padding-inline: 20px; text-align: center; border-left: 1px solid var(--line-light); }

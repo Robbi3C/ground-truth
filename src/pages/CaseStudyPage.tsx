@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { GroundTruthBrand } from '../components/GroundTruthBrand';
+import { ThemeToggle } from '../components/ThemeToggle';
 import { cases } from '../data/cases';
 import { MicromobilityStory } from '../components/MicromobilityStory';
 import { ThemeParkStory } from '../components/ThemeParkStory';
@@ -17,7 +18,7 @@ export function CaseStudyPage({ slug }: { slug: string }) {
   if (!item || !Story) return <main className="wrap cd-page"><h1>Case study not found.</h1><a href={back}>Back to all case studies</a></main>;
 
   return <div className="m2" id="top"><a className="skip-link" href="#main">Skip to content</a>
-    <header className="m2-header wrap"><GroundTruthBrand href="/"/><a className="cd-back" href={back}><ArrowLeft size={18} aria-hidden="true"/> All case studies</a></header>
+    <header className="m2-header wrap"><GroundTruthBrand href="/"/><div className="header-actions"><a className="cd-back" href={back}><ArrowLeft size={18} aria-hidden="true"/> All case studies</a><ThemeToggle /></div></header>
     <main id="main" className="px-page">
       <Story image={item.image} alt={item.alt}/>
       <div className="wrap px-footer">

@@ -1,0 +1,23 @@
+/* Oat & Petrol, light. The roles invert: --ink becomes the light page surface and
+   --paper the dark text and contrast blocks; the deep teal accent carries --ink text. */
+:root[data-theme="light"] {
+  --ink: #f0ece3;
+  --charcoal: #e5e0d4;
+  --paper: #121c22;
+  --paper-dark: #223038;
+  --muted: #56605f;
+  --orange: #1d5a6b;
+  --ink-text-faint: color-mix(in srgb, var(--paper) 66%, var(--ink));
+}
+
+/* Original near-black and orange palette, kept for a quick revert. Not exposed in
+   the UI: set data-palette="original" on <html> to see it. */
+:root[data-palette="original"] {
+  --ink: #0c0c0c;
+  --charcoal: #151515;
+  --paper: #d8d8d4;
+  --paper-dark: #c8c8c3;
+  --muted: #aaa9a3;
+  --orange: #ff4d00;
+  --ink-text-faint: color-mix(in srgb, var(--paper) 52%, var(--ink));
+}

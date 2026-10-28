@@ -1,6 +1,7 @@
 import { ArrowDownRight, ArrowUpRight, ArrowUp, MoveRight } from 'lucide-react';
 import { useEffect } from 'react';
 import { GroundTruthBrand } from '../components/GroundTruthBrand';
+import { ThemeToggle } from '../components/ThemeToggle';
 import { HeroExplorations } from '../components/HeroExplorations';
 import { ServiceExplorations } from '../components/ServiceExplorations';
 import { ExperienceAbout } from '../components/ExperienceAbout';
@@ -12,7 +13,7 @@ function Conversation() {
 
 export function MarkTwo() {
   useEffect(() => { document.title = 'Ground Truth | Independent Advisory'; }, []);
-  return <div className="m2" id="top"><a className="skip-link" href="#main">Skip to content</a><header className="m2-header wrap"><GroundTruthBrand /><nav aria-label="Page navigation"><a href="#help">Where I help</a><a href="#work">Experience</a><a href="#about">About</a><a href="#contact">Let’s talk <ArrowDownRight size={16} aria-hidden="true" /></a></nav></header><main id="main"><HeroExplorations /><ServiceExplorations /><ExperienceAbout /><Conversation /></main><footer className="m2-footer wrap"><div className="m2-footer-brand"><GroundTruthBrand /><span>© 2025</span></div><a href="#top">Back to top <ArrowUp size={16} aria-hidden="true" /></a></footer></div>;
+  return <div className="m2" id="top"><a className="skip-link" href="#main">Skip to content</a><header className="m2-header wrap"><GroundTruthBrand /><div className="header-actions"><nav aria-label="Page navigation"><a href="#help">Where I help</a><a href="#work">Experience</a><a href="#about">About</a><a href="#contact">Let’s talk <ArrowDownRight size={16} aria-hidden="true" /></a></nav><ThemeToggle /></div></header><main id="main"><HeroExplorations /><ServiceExplorations /><ExperienceAbout /><Conversation /></main><footer className="m2-footer wrap"><div className="m2-footer-brand"><GroundTruthBrand /><span>© 2025</span></div><a href="#top">Back to top <ArrowUp size={16} aria-hidden="true" /></a></footer></div>;
 }
 
 

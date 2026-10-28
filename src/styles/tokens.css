@@ -4,16 +4,24 @@
 @font-face { font-family: Switzer; src: url('/fonts/switzer-700.woff2') format('woff2'); font-weight: 700; font-display: swap; }
 
 :root {
+  /* Oat & Petrol, dark (default). Light mode and the original palette live in palettes.css. */
   font-family: Switzer, 'Helvetica Neue', Arial, sans-serif;
   font-synthesis: none;
-  --ink: #0c0c0c;
-  --charcoal: #151515;
-  --paper: #d8d8d4;
-  --paper-dark: #c8c8c3;
-  --muted: #aaa9a3;
-  --orange: #ff4d00;
-  --line-dark: rgb(12 12 12 / 22%);
-  --line-light: rgb(216 216 212 / 20%);
+  --ink: #0f191e;
+  --charcoal: #162329;
+  --paper: #f0ece3;
+  --paper-dark: #ddd8cc;
+  --muted: #9eaaa9;
+  --orange: #5bb4c0; /* accent slot; name kept from the original orange */
+  --line-dark: color-mix(in srgb, var(--ink) 22%, transparent);
+  --line-light: color-mix(in srgb, var(--paper) 20%, transparent);
+  /* Derived from the core palette so a palette swap only sets the six values above. */
+  --paper-text-soft: color-mix(in srgb, var(--ink) 70%, var(--paper));
+  --ink-text-soft: color-mix(in srgb, var(--paper) 86%, var(--ink));
+  --ink-text-faint: color-mix(in srgb, var(--paper) 52%, var(--ink));
+  --ink-hover: color-mix(in srgb, var(--paper) 7%, var(--ink));
+  --ink-hover-strong: color-mix(in srgb, var(--paper) 13%, var(--ink));
+  --accent-tint: color-mix(in srgb, var(--orange) 10%, var(--ink));
   --page-gutter: clamp(24px, 5.6vw, 88px);
   --page-width: 1440px;
   --ease-out: cubic-bezier(.16, 1, .3, 1);

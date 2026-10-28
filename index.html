@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0c0c0c" />
+    <meta name="theme-color" content="#0f191e" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="Ground Truth. Independent advisory for founders, CEOs and leadership teams." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Ground Truth | Independent Advisory</title>
+    <script>try { if (localStorage.getItem('gt-theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch {}</script>
   </head>
   <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <filter id="hl-rough" x="-5%" y="-25%" width="110%" height="150%">
+        <feTurbulence type="fractalNoise" baseFrequency=".03 .22" numOctaves="2" seed="7" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </svg>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

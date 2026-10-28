@@ -14,12 +14,12 @@
 .ea-company span { display: block; font-size: 12px; line-height: 1.5; margin-top: 8px; }
 .ea-story { margin-block: 32px; }
 .ea-story h4 { font-size: 27px; font-weight: 500; line-height: 1.15; letter-spacing: -.025em; margin: 0 0 18px; text-wrap: balance; }
-.ea-story p { font-size: 16px; line-height: 1.65; color: #44443f; }
+.ea-story p { font-size: 16px; line-height: 1.65; color: var(--paper-text-soft); }
 .ea-result { margin-top: auto; min-height: 130px; padding-top: 24px; border-top: 1px solid var(--line-dark); }
 .ea-metric strong { font-size: clamp(48px,5vw,72px); font-weight: 500; letter-spacing: -.04em; line-height: 1; }
 .ea-metric span { display: block; margin-top: 12px; font-size: 14px; }
 .ea-outcome strong { font-size: 23px; font-weight: 500; line-height: 1.3; display: block; max-width: 24ch; }
-.ea-work-1 { background: #c8c8c3; }
+.ea-work-1 { background: var(--paper-dark); }
 .ea-work-1 .ea-cases { grid-template-columns: 1.1fr 1fr; gap: 0 44px; }
 .ea-work-1 .ea-case:first-child { grid-row: span 2; background: var(--ink); color: var(--paper); padding: 38px; border: 0; }
 .ea-work-1 .ea-case:first-child .ea-company h3 { color: var(--orange); font-size: 32px; }
@@ -35,7 +35,7 @@
 .ea-work-2 .ea-cases { display: block; }
 .ea-work-2 .ea-case { display: grid; grid-template-columns: .85fr 1.25fr .8fr; gap: 50px; padding-block: 32px; border-color: var(--line-light); }
 .ea-work-2 .ea-story { margin: 0; }
-.ea-work-2 .ea-story p { color: #bcbcb5; }
+.ea-work-2 .ea-story p { color: var(--ink-text-soft); }
 .ea-work-2 .ea-result { margin: 0; padding: 0; border: 0; }
 .ea-work-2 .ea-metric strong { color: var(--orange); }
 .ea-about { background: var(--ink); color: var(--paper); }
@@ -46,7 +46,7 @@
 .ea-portrait { grid-column: 1; grid-row: 1 / span 2; overflow: hidden; }
 .ea-portrait img { width: 100%; height: 100%; max-height: 680px; object-fit: cover; object-position: 50% 25%; display: block; }
 .ea-person-copy { grid-column: 2; align-self: start; max-width: 58ch; }
-.ea-person-copy p { font-size: 17px; line-height: 1.7; color: #bcbcb5; margin-bottom: 20px; }
+.ea-person-copy p { font-size: 17px; line-height: 1.7; color: var(--ink-text-soft); margin-bottom: 20px; }
 .ea-person-copy .ea-principle { color: var(--paper); font-size: 22px; line-height: 1.4; margin-top: 28px; }
 .ea-cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 40px; padding: 15px 20px; min-height: 50px; margin-top: 10px; background: var(--orange); color: var(--ink); font-size: 15px; }
 .ea-cta svg { transition: transform .2s ease-out; }

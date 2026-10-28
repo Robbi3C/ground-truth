@@ -94,7 +94,7 @@
 /* Homepage case cards (above 760px). */
 .cw-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .cw-card { display: flex; flex-direction: column; min-width: 0; background: var(--charcoal); border: 1px solid var(--line-light); transition: transform .2s var(--ease-out), border-color .2s, background .2s; }
-.cw-card:hover { transform: translateY(-5px); border-color: rgb(216 216 212 / 40%); background: #1b1b1b; }
+.cw-card:hover { transform: translateY(-5px); border-color: color-mix(in srgb, var(--paper) 40%, transparent); background: var(--ink-hover); }
 .cw-card:focus-visible { outline: 2px solid var(--orange); outline-offset: 5px; }
 .cw-cards .cs-image { height: 215px; }
 .cw-card:hover .cs-image img { transform: scale(1.035); }
@@ -161,13 +161,13 @@
 
 /* Results are the payoff: the four headline figures carry the section. */
 .px-results { background: var(--paper); color: var(--ink); }
-.px-results .px-copy p { color: #4b4b45; }
+.px-results .px-copy p { color: var(--paper-text-soft); }
 .px-results .px-copy .px-lead { color: var(--ink); }
 .px-outcomes { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 32px; margin: 44px 0; }
 .px-outcomes:first-child { margin-top: 0; }
 .px-outcomes > div { border-top: 1px solid var(--line-dark); padding-top: 18px; }
 .px-outcomes dt { font-size: clamp(44px, 4.6vw, 68px); font-weight: 600; line-height: 1; letter-spacing: -.045em; }
-.px-outcomes dd { margin: 12px 0 0; max-width: 28ch; font-size: 15px; line-height: 1.5; color: #4b4b45; }
+.px-outcomes dd { margin: 12px 0 0; max-width: 28ch; font-size: 15px; line-height: 1.5; color: var(--paper-text-soft); }
 
 .m2 .px-since h2 { font-size: 23px; font-weight: 500; letter-spacing: -.025em; text-transform: none; }
 .px-since .px-copy p { font-size: 16px; }

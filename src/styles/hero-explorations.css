@@ -6,10 +6,10 @@
 .hx-choices button { min-height: 40px; display: flex; gap: 10px; align-items: center; padding: 10px 16px; font-size: 12px; border-radius: 3px; transition: background .2s; }
 .hx-choices button > span { font-size: 10px; opacity: .7; }
 .hx-choices button[aria-pressed="true"] { background: var(--paper); color: var(--ink); }
-.hx-choices button:hover:not([aria-pressed="true"]) { background: #282826; }
+.hx-choices button:hover:not([aria-pressed="true"]) { background: var(--ink-hover-strong); }
 .hx-cycle { display: flex; align-items: center; gap: 8px; }
 .hx-cycle button { display: grid; place-items: center; width: 40px; height: 40px; }
-.hx-cycle button:hover { background: #282826; }
+.hx-cycle button:hover { background: var(--ink-hover-strong); }
 .hx-cycle > span { font-size: 10px; color: var(--muted); white-space: nowrap; }
 .hx-rationale { color: var(--muted); font-size: 11px; line-height: 1.5; padding-top: 10px; min-height: 27px; }
 .hx-stage { display: grid; grid-template-columns: 1.12fr 1fr; gap: 70px; align-items: center; padding-block: var(--hero-top-space) var(--section-space); min-height: 650px; }
@@ -22,7 +22,7 @@
 .hx-text-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; font-size: 12px; }
 .hx-text-link:hover { text-decoration: underline; text-underline-offset: 5px; }
 .hx-remit { display: flex; flex-wrap: wrap; gap: 12px; font-size: 11px; color: var(--muted); margin-top: 28px; }
-.hx-remit span { color: #777770; }
+.hx-remit span { color: var(--ink-text-faint); }
 .hx-visual { min-width: 0; }
 .hx-visual .image-placeholder { height: 560px; aspect-ratio: auto; }
 .hx-image-caption { display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between; font-size: 10px; margin-top: 13px; }
@@ -33,7 +33,7 @@
 .hx-person-card { background: var(--paper); color: var(--ink); position: relative; margin-left: -34px; margin-right: 34px; padding: 23px 28px; margin-top: -18px; }
 .hx-person-card p { font-size: 28px; font-weight: 500; letter-spacing: -.03em; }
 .hx-person-card span { display: block; font-size: 12px; line-height: 1.6; margin-top: 4px; }
-.hx-person-card span:last-child { font-size: 10px; color: #4b4b45; margin-top: 12px; }
+.hx-person-card span:last-child { font-size: 10px; color: var(--paper-text-soft); margin-top: 12px; }
 .hx-operator-proof { display: flex; justify-content: space-between; gap: 24px; align-items: center; max-width: 365px; border-top: 1px solid var(--line-light); padding-top: 19px; margin-top: 27px; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .hx-operator-proof strong { font-weight: 400; color: var(--paper); }
 .hx-operator-proof:hover { color: var(--paper); }

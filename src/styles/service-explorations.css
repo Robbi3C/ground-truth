@@ -27,7 +27,7 @@
 .sx-matrix-grid article { padding: 30px; background: var(--paper); display: flex; flex-direction: column; }
 .sx-matrix-grid h3 { font-size: 27px; min-height: 2.3em; max-width: 16ch; }
 .sx-matrix-grid .sx-lead { margin-top: 36px; font-size: 20px; }
-.sx-matrix-grid .sx-body { margin-top: 16px; color: #4b4b45; font-size: 14px; }
+.sx-matrix-grid .sx-body { margin-top: 16px; color: var(--paper-text-soft); font-size: 14px; }
 .sx-matrix-grid article:first-child { background: var(--orange); }
 .sx-matrix-grid article:first-child .sx-body { color: var(--ink); }
 .sx-matrix-grid article:nth-child(5) { background: var(--charcoal); color: var(--paper); }
@@ -46,7 +46,7 @@
 .sx-detail-content { animation: sx-reveal .2s ease-out; display: flex; flex-direction: column; min-height: 365px; }
 .sx-service-detail h3 { font-size: 17px; font-weight: 500; margin-bottom: 32px; }
 .sx-service-detail .sx-lead { font-size: clamp(28px,2.9vw,40px); line-height: 1.15; letter-spacing: -.03em; max-width: 21ch; }
-.sx-service-detail .sx-body { color: #4b4b45; margin-top: 24px; }
+.sx-service-detail .sx-body { color: var(--paper-text-soft); margin-top: 24px; }
 .sx-service-detail .sx-contact { margin-top: auto; padding-top: 26px; align-self: flex-start; }
 @keyframes sx-reveal { from { opacity: .6; } to { opacity: 1; } }
 @media(max-width:1100px) {
@@ -92,7 +92,7 @@
 .sx-matrix-grid article { padding: 32px; transition: background .22s ease-out,color .22s ease-out; }
 .sx-matrix-grid article:nth-child(odd) { background: var(--paper); color: var(--ink); }
 .sx-matrix-grid article:nth-child(even) { background: var(--charcoal); color: var(--paper); }
-.sx-matrix-grid article:nth-child(odd) .sx-body { color: #4b4b45; }
+.sx-matrix-grid article:nth-child(odd) .sx-body { color: var(--paper-text-soft); }
 .sx-matrix-grid article:nth-child(even) .sx-body { color: var(--muted); }
 .sx-service-icon { color: var(--orange); flex-shrink: 0; }
 .sx-matrix-grid article:nth-child(odd) .sx-service-icon { color: var(--ink); }
@@ -131,14 +131,14 @@
 .sx-card .sx-lead { margin-top: 18px; font-size: 17px; line-height: 1.45; }
 .sx-card .sx-body { margin-top: 12px; font-size: 14px; line-height: 1.65; }
 .sx-card .sx-service-link { border-top: 1px solid var(--line-light); }
-.sx-card:focus-within { border-color: var(--orange); background: #211810; }
+.sx-card:focus-within { border-color: var(--orange); background: var(--accent-tint); }
 .sx-card:focus-within .sx-service-link { color: var(--orange); }
 @media(hover:hover) {
   .sx-matrix-grid article:hover { background: var(--orange); color: var(--ink); }
   .sx-matrix-grid article:hover .sx-body, .sx-matrix-grid article:hover .sx-service-icon { color: var(--ink); }
-  .sx-card:hover { border-color: var(--orange); background: #211810; }
+  .sx-card:hover { border-color: var(--orange); background: var(--accent-tint); }
   .sx-card:hover .sx-service-link { color: var(--orange); }
-  .sx-service-menu button:not([aria-selected="true"]):hover { background: #232323; }
+  .sx-service-menu button:not([aria-selected="true"]):hover { background: var(--ink-hover-strong); }
 }
 @media(max-width:1100px) {
   .sx-card-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
