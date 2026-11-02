@@ -23,6 +23,10 @@ Last updated: 2 November 2026.
 - Dialogs: `@radix-ui/react-dialog`, which handles behaviour only and comes with no styling. Chosen for reliable focus handling, Esc and outside-click closing, and scroll locking on iOS, without imposing any styling.
 - Fonts are self-hosted in `public/fonts/` (Switzer, Plus Jakarta Sans for the logo).
 - Colour: the Oat & Petrol palette, dark by default, with a light/dark toggle. Palette values live in `src/styles/tokens.css` and `src/styles/palettes.css`.
+- Accent (`--orange`, name kept from the original palette) is a different shade in each mode, because one shade can't read well on both backgrounds:
+  - Dark mode: **#61ADB7**. Chosen 2 November 2026 as a slightly calmer version of the original #5BB4C0, which felt too bright and youthful. The deep light-mode petrol, the midpoint #64A9B3 and more muted options (sea glass, dusty petrol, sage, brass) were also tried and rejected.
+  - Light mode: **#1D5A6B** (deep petrol).
+  - Text on the accent must stay readable (at least 4.5 : 1). In dark mode it is near-black text on the accent (about 7 : 1). Don't use the deep petrol in dark mode: near-black text on it drops to about 2.4 : 1.
 
 ## Contact flow
 
