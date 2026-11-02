@@ -30,7 +30,9 @@ The intended primary domain is `www.groundtruthconsulting.co`, with DNS managed 
 
 ## Current site
 
-The homepage includes the hero, proof ribbon, focused services selector, three compact case studies, testimonial placeholder, profile and contact section. Case studies expand using native details controls. Navigation uses homepage anchors.
+The homepage includes the hero, proof ribbon, focused services selector, three case studies, a hidden testimonial placeholder, profile and contact section. Case studies have their own pages under `/work`. "Let's talk" links open a contact panel backed by Formspree; the same form is at `/contact`.
+
+See DECISIONS.md for hosting, services and accounts, and the reasoning behind key choices.
 
 ## Publication notes
 

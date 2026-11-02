@@ -38,7 +38,7 @@
 .ea-work-2 .ea-story p { color: var(--ink-text-soft); }
 .ea-work-2 .ea-result { margin: 0; padding: 0; border: 0; }
 .ea-work-2 .ea-metric strong { color: var(--orange); }
-.ea-about { background: var(--ink); color: var(--paper); }
+.ea-about { background: var(--charcoal); color: var(--paper); }
 .ea-person-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px 70px; }
 .ea-person-heading { grid-column: 2; }
 .ea-about .ea-person-heading h2 { font-size: clamp(30px,3.4vw,48px); }
@@ -81,6 +81,3 @@
   .ea-about .ea-person-heading h2 { font-size: clamp(25px,7.1vw,40px); }
 }
 @media(prefers-reduced-motion:reduce) { .ea-cta svg { transition: none; } }
-/* Case studies and About share a background, so their padding stacks into a double gap.
-   While the testimonials section between them is hidden, keep a single section gap. */
-.ea-testimonials[hidden] + .ea-about .ea-section { padding-top: 0; }
