@@ -81,3 +81,6 @@
   .ea-about .ea-person-heading h2 { font-size: clamp(25px,7.1vw,40px); }
 }
 @media(prefers-reduced-motion:reduce) { .ea-cta svg { transition: none; } }
+/* Case studies and About share a background, so their padding stacks into a double gap.
+   While the testimonials section between them is hidden, keep a single section gap. */
+.ea-testimonials[hidden] + .ea-about .ea-section { padding-top: 0; }
