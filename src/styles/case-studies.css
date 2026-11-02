@@ -220,3 +220,8 @@
  .px-cta p, .px-cta .m2-contact-link { font-size: 16px; }
  .px-footer .cd-other a + a { border-top: 1px solid var(--line-light); }
 }
+.px-cta .m2-contact-cta { margin-top: 24px; }
+.px-cta .px-cta-alt { margin-top: 16px; font-size: 14px; }
+.px-cta .px-cta-alt a { text-decoration: underline; text-underline-offset: 4px; }
+/* Phones: the logo already links home and there's no room beside the theme toggle. */
+@media(max-width:560px) { .m2-header .cd-back { display: none; } }

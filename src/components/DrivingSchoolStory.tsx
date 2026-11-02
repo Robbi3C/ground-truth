@@ -70,7 +70,8 @@ export function DrivingSchoolStory({ image, alt }: { image: string; alt: string 
       <h2>Facing a similar growth challenge?</h2>
       <div>
         <p>Struggling with acquisition, customer retention or a proposition that no longer delivers enough value? Let’s talk about finding the underlying problem and building a better model for growth.</p>
-        <a className="m2-contact-link" href="mailto:rob@groundtruthconsulting.co"><strong>rob@groundtruthconsulting.co <ArrowUpRight size={18} aria-hidden="true"/></strong></a>
+        <a className="m2-contact-cta" href="/contact">Let’s talk <ArrowUpRight size={18} aria-hidden="true"/></a>
+        <p className="px-cta-alt">Or email <a href="mailto:rob@groundtruthconsulting.co">rob@groundtruthconsulting.co</a></p>
       </div>
     </div></section>
   </>;

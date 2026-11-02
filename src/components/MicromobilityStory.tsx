@@ -76,7 +76,8 @@ export function MicromobilityStory({ image, alt }: { image: string; alt: string 
       <h2>Facing a similar challenge?</h2>
       <div>
         <p>Dealing with cash pressure, an unsustainable operating model or a growth strategy that’s no longer delivering? Let’s talk about finding a clearer path to profitability and building a business that can scale.</p>
-        <a className="m2-contact-link" href="mailto:rob@groundtruthconsulting.co"><strong>rob@groundtruthconsulting.co <ArrowUpRight size={18} aria-hidden="true"/></strong></a>
+        <a className="m2-contact-cta" href="/contact">Let’s talk <ArrowUpRight size={18} aria-hidden="true"/></a>
+        <p className="px-cta-alt">Or email <a href="mailto:rob@groundtruthconsulting.co">rob@groundtruthconsulting.co</a></p>
       </div>
     </div></section>
   </>;

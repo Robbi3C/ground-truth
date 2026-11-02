@@ -68,7 +68,8 @@ export function ThemeParkStory({ image, alt }: { image: string; alt: string }) {
       <h2>Facing a similar transformation?</h2>
       <div>
         <p>Rethinking your business model, developing new digital products or looking to create a better guest experience that delivers stronger commercial results? Let’s talk.</p>
-        <a className="m2-contact-link" href="mailto:rob@groundtruthconsulting.co"><strong>rob@groundtruthconsulting.co <ArrowUpRight size={18} aria-hidden="true"/></strong></a>
+        <a className="m2-contact-cta" href="/contact">Let’s talk <ArrowUpRight size={18} aria-hidden="true"/></a>
+        <p className="px-cta-alt">Or email <a href="mailto:rob@groundtruthconsulting.co">rob@groundtruthconsulting.co</a></p>
       </div>
     </div></section>
   </>;
