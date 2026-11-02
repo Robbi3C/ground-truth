@@ -12,7 +12,7 @@
   --paper: #f0ece3;
   --paper-dark: #ddd8cc;
   --muted: #9eaaa9;
-  --orange: #1d5a6b; /* accent slot; name kept from the original orange */
+  --orange: #5bb4c0; /* accent slot; name kept from the original orange */
   --line-dark: color-mix(in srgb, var(--ink) 22%, transparent);
   --line-light: color-mix(in srgb, var(--paper) 20%, transparent);
   /* Derived from the core palette so a palette swap only sets the six values above. */
