@@ -1,11 +1,11 @@
 import { useId, useRef, useState, type FormEvent } from 'react';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, ChevronDown } from 'lucide-react';
 import '../../styles/contact.css';
 
 const ENDPOINT = 'https://formspree.io/f/mljjoebo';
 const EMAIL = 'rob@groundtruthconsulting.co';
 const LINKEDIN = 'https://www.linkedin.com/in/robertcowell/';
-const topics = ['Ongoing advisory', 'A defined project', 'Fractional or interim', 'Not sure yet'];
+const topics = ['Strategy', 'Business performance', 'Growth & new ventures', 'Transformation', 'AI adoption', 'Leadership & organisation', 'Fractional COO support', 'Something else'];
 
 type Values = { name: string; email: string; company: string; topic: string; message: string };
 type Errors = Partial<Record<'name' | 'email', string>>;
@@ -88,13 +88,16 @@ export function ContactForm({ onDone, doneLabel = 'Close' }: { onDone?: () => vo
       <label htmlFor={`${id}-company`}>Company <span>(optional)</span></label>
       <input id={`${id}-company`} name="company" type="text" autoComplete="organization" value={values.company} onChange={e => update('company', e.target.value)} />
     </div>
-    <fieldset className="ct-field ct-topics">
-      <legend>What would you like help with? <span>(optional)</span></legend>
-      <div>{topics.map(topic => <label key={topic} className="ct-topic">
-        <input type="radio" name="topic" value={topic} checked={values.topic === topic} onChange={() => update('topic', topic)} />
-        <span>{topic}</span>
-      </label>)}</div>
-    </fieldset>
+    <div className="ct-field">
+      <label htmlFor={`${id}-topic`}>What would you like help with? <span>(optional)</span></label>
+      <div className="ct-select">
+        <select id={`${id}-topic`} name="topic" value={values.topic} onChange={e => update('topic', e.target.value)} data-empty={!values.topic || undefined}>
+          <option value="">Choose a topic</option>
+          {topics.map(topic => <option key={topic} value={topic}>{topic}</option>)}
+        </select>
+        <ChevronDown size={18} aria-hidden="true" />
+      </div>
+    </div>
     <div className="ct-field">
       <label htmlFor={`${id}-message`}>What’s going on? <span>(optional)</span></label>
       <textarea id={`${id}-message`} name="message" rows={4} placeholder="A sentence or two is plenty" value={values.message} onChange={e => update('message', e.target.value)} />
